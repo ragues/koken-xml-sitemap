@@ -180,6 +180,7 @@ class PulonairXmlSitemapTest extends KokenPlugin {
 		$imageChild = $parent->addChild('image:image', null, self::IMAGE_NS);
 		$imageChild->addChild('image:loc', $item['presets'][$preset]['url'], self::IMAGE_NS);
 		$imageChild->addChild('image:title', $item['title'], self::IMAGE_NS);
+		$imageChild->addChild('image:caption', $item['caption'], self::IMAGE_NS);
 
 		return $imageChild;
 	}
